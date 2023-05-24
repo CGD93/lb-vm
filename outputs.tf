@@ -55,3 +55,34 @@ output "user_name" {
 output "user_password" {
   value = var.user_password
 }
+
+output "NSG-name" {
+  value = var.NSG-name
+}
+output "security_rule_name" {
+  value = var.security_rule_name
+}
+output "security_rule_priority" {
+  value = var.security_rule_priority
+}
+output "security_rule_direction" {
+  value = var.security_rule_direction
+}
+output "security_rule_access" {
+  value = var.security_rule_access
+}
+output "security_rule_protocol" {
+  value = var.security_rule_protocol
+}
+output "security_rule_source_port_range" {
+  value = var.security_rule_source_port_range
+}
+output "security_rule_destination_port_range" {
+  value = var.security_rule_destination_port_range
+}
+output "security_rule_source_address_prefix" {
+  value = var.security_rule_source_address_prefix
+}
+output "security_rule_destination_address_prefix" {
+  value = var.security_rule_destination_address_prefix
+}
