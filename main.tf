@@ -80,8 +80,8 @@ resource "azurerm_virtual_machine" "VM" {
 
 resource "azurerm_network_security_group" "NSG" {
   name = var.NSG-name
-  location = var.RG-location
-  resource_group_name = var.RG-name
+  resource_group_name = azurerm_resource_group.RG.name
+  location            = azurerm_resource_group.RG.location
   tags = var.tag
   security_rule {
     name                       = var.security_rule_name
